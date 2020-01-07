@@ -1,0 +1,31 @@
+html
+  body
+    head
+      meta(charset='utf-8')
+      meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+      meta(name='description' content='ldap-authentication testing')
+      meta(name='author' content='Jingshao Chen')
+      link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css' integrity='sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm' crossorigin='anonymous')
+      title Testing Page to use ldap-authentication as a passport strategy
+      
+    .container
+      h1.text-center Use ldap-authentication as a passport strategy
+      .row.d-flex.justify-content-center
+        .col-sm-4
+          form.form-signin(action='/login' method='post')
+            h1.h3.mb-3.font-weight-normal.text-center Sign in
+            p
+              | Use 
+              code gauss
+              |  and 
+              code password
+              |  to test.
+            .form-label-group
+              input#username.form-control.rounded-0(name='username' type='text' autocomplete='username' placeholder='Username' required='' autofocus='')
+            .form-label-group
+              input#password.form-control.rounded-0(name='password' type='password' autocomplete='current-password' placeholder='Password' required='')
+            div
+              input.btn.btn-lg.btn-primary.btn-block.rounded-0.mt-3(type='submit')
+      p.text-muted.text-center.small
+        | Online LDAP test server provided by 
+        a(href='https://www.forumsys.com/tutorials/integration-how-to/ldap/online-ldap-test-server/') forumsys

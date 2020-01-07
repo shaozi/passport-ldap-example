@@ -1,0 +1,22 @@
+html
+  body
+    head
+      meta(charset='utf-8')
+      meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+      meta(name='description' content='ldap-authentication testing')
+      meta(name='author' content='Jingshao Chen')
+      link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css' integrity='sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm' crossorigin='anonymous')
+      title Testing Page to use ldap-authentication as a passport strategy
+    
+    .container
+      .jumbotron.rounded-0
+        h1.display-4 Welcome 
+          = userDisplayName
+        p.lead
+          | You have successfully logged in with <strong>LDAP</strong>!
+        p 
+          a.btn.btn-primary.rounded-0(href="/logout") Sign Out     
+      p.text-muted * Chrome security warning on password is OK, 
+        | because we use <code>password</code> as the password for testing purpose only!
+      p User details:
+        pre= userObject
