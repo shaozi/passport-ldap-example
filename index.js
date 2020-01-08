@@ -37,7 +37,7 @@ passport.use('ldap', new CustomStrategy(
         userDn: `uid=${req.body.username},${ldapBaseDn}`,
         userPassword: req.body.password,
         userSearchBase: ldapBaseDn,
-        userSearchString: `(uid=${req.body.username})`,
+        userSearchFilter: `(uid=${req.body.username})`,
       }
       // ldap authenticate the user
       let user = await authenticate(options)
