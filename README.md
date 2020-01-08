@@ -37,7 +37,7 @@ let options = {
   userDn: `uid=${req.body.username},${ldapBaseDn}`,
   userPassword: req.body.password,
   userSearchBase: ldapBaseDn,
-  userSearchFilter: `(uid=${req.body.username})`,
+  usernameAttribute: 'uid'
 }
 ```
 
