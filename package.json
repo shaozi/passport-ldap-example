@@ -9,9 +9,9 @@
   "author": "Jingshao Chen",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.19.0",
+    "body-parser": "^1.20.1",
     "cookie-session": "^1.4.0",
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "ldap-authentication": "^2.1.0",
     "passport": "^0.4.1",
     "passport-custom": "^1.1.0",
