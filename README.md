@@ -15,7 +15,7 @@ This example uses [ldap-authtication](https://github.com/shaozi/ldap-authenticat
 
 ## How does it work
 
-This example uses [ldap-authtication](https://github.com/shaozi/ldap-authentication) and put it in [passport-custom](https://github.com/mbell8903/passport-custom/blob/master/test/strategy.test.js) to create
+This example uses [ldap-authentication](https://github.com/shaozi/ldap-authentication) and put it in [passport-custom](https://github.com/mbell8903/passport-custom/blob/master/test/strategy.test.js) to create
 a complete Passport strategy.
 
 The LDAP server is hosted at [forumsys](https://www.forumsys.com/tutorials/integration-how-to/ldap/online-ldap-test-server/) and it has a few simple
